@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom"
 const NavBar = () => {
     const navigate = useNavigate();
 
+    const handleLogin = () => {
+        navigate('/login');
+    }
+
     const handleClick = () => {
         navigate('/');
     }
@@ -28,6 +32,7 @@ const NavBar = () => {
                 <Button
                     type="button"
                     className="mx-2 px-4 py-1 border border-white text-white rounded hover:bg-colorButtonHover hover:text-white duration-300"
+                    onClick={handleLogin}
                 >
                     Entrar
                 </Button>
@@ -35,6 +40,7 @@ const NavBar = () => {
                 <Button
                     type="button"
                     className="mx-2 px-4 py-1 border border-white text-white rounded hover:bg-colorButtonHover hover:text-white duration-300"
+                    onClick={handleClick}
                 >
                     Sobre Nós
                 </Button>
@@ -42,6 +48,7 @@ const NavBar = () => {
                 <Button
                     type="button"
                     className="mx-2 px-4 py-1 border border-white text-white rounded hover:bg-colorButtonHover hover:text-white duration-300"
+                    onClick={handleClick}
                 >
                     Contato
                 </Button>
