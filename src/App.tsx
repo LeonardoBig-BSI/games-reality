@@ -10,8 +10,12 @@ import SectionContact from "./components/Sections/SectionContact/SectionContact"
 function App() {
   const navigate = useNavigate();
 
-  const handleClick = () => {
+  const handleRegisterGiveaway = () => {
     navigate('/registerGiveaway');
+  }
+
+  const handleLogin = () => {
+    navigate('/login');
   }
 
   return (
@@ -39,7 +43,7 @@ function App() {
               <Button
                 type="button"
                 className="mt-2 sm:mt-8 px-8 py-2 text-sm sm:text-base border border-colorButton bg-colorButton text-white rounded hover:bg-colorButtonHover hover:text-white duration-300"
-                onClick={handleClick}
+                onClick={handleRegisterGiveaway}
               >
                 INSCREVER-SE
               </Button>
@@ -70,7 +74,7 @@ function App() {
               <Button
                 type="button"
                 className="mt-2 ml-4 px-8 py-2 border border-colorButton bg-colorButton text-white rounded hover:bg-colorButtonHover hover:text-white duration-300"
-                onClick={handleClick}
+                onClick={handleLogin}
               >
                 ENTRAR
               </Button>
