@@ -1,20 +1,26 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import App from "../App"
-import RegisterGiveaway from "../pages/RegisterGiveaway/RegisterGiveaway"
-import Login from "../pages/Login/Login"
-import RegisterUser from "../pages/RegisterUser/RegisterUser"
+import { createBrowserRouter  } from "react-router-dom";
+import App from "../App";
+import Login from "../pages/Login/Login";
+import RegisterGiveaway from "../pages/RegisterGiveaway/RegisterGiveaway";
+import RegisterUser from "../pages/RegisterUser/RegisterUser";
 
-const Router = () => {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<App />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/registerUser" element={<RegisterUser />} />
-                <Route path="/registerGiveaway" element={<RegisterGiveaway />} />
-            </Routes>
-        </BrowserRouter>
-    )
-}
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <App />
+    },
+    {
+        path: '/login',
+        element: <Login />
+    },
+    {
+        path: '/registerGiveaway',
+        element: <RegisterGiveaway />
+    },
+    {
+        path: '/register',
+        element: <RegisterUser />
+    },
+]);
 
-export default Router
+export { router };

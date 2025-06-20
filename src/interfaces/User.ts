@@ -1,4 +1,5 @@
 export interface User {
+    id: number;
     name: string;
     date: string;
     email: string;
@@ -6,5 +7,5 @@ export interface User {
     city: string;
     country: string;
     address: string;
-    postalCode: string;
+    zipCode: string;
 }

@@ -38,7 +38,7 @@ const Login = () => {
       style={{ backgroundImage: "url('image-login.jpg')" }}
     >
       <h1 className="mt-64 md:mt-40 text-xl sm:text-2xl md:text-3xl text-center text-zinc-100 font-bold">
-        Log In
+        Login
       </h1>
 
       <form onSubmit={handleSubmit}>
@@ -76,7 +76,7 @@ const Login = () => {
 
       <div className="mt-8 sm:mt-4 md:mt-8 flex justify-center items-center">
         <p className="mx-auto text-sm sm:text-base md:text-base font-bold text-white">
-          Não possui uma conta? <a href="registerUser" className="text-colorButton hover:underline hover:cursor-pointer">
+          Não possui uma conta? <a href="register" className="text-colorButton hover:underline hover:cursor-pointer">
             Clique aqui.
           </a>
         </p>
